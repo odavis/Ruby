@@ -5,3 +5,19 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 find the sum of the even-valued terms.
 =end
 
+def factorial num
+	if num < 0 
+		return "You cant take the factorial of a negative number"
+	end
+
+	if num <= 1 
+		1
+	else
+		num*factorial(num-1)
+	end
+
+end
+
+
+puts factorial(3)
+

@@ -4,6 +4,6 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 =end
 
 sum = 0
-1000.times { |n| sum = sum+n if (n%3 ==0 || n%5==0)}
+1000.times { |n| sum +=n if (n%3 ==0 || n%5==0)}
 puts sum
 
