@@ -27,7 +27,7 @@ class OrangeTree
 				puts "The tree is now #{@height} ft tall"
 			end	
 		else
-			abort ("The orange tree has died")
+			abort("The orange tree has died")
 		end	
 	end
 
@@ -36,7 +36,7 @@ class OrangeTree
 			@fruit = (@age*(@height*0.3)*(rand(3)+1)).to_i
 			puts "There are #{@fruit} oranges on the tree"
 		else
-			abort ("The orange tree has died")
+			abort("The orange tree has died")
 		end
 	end
 
@@ -51,7 +51,7 @@ class OrangeTree
 				puts "There is no fruit to pick"
 			end
 		else
-			abort ("The orange tree has died")
+			abort("The orange tree has died")
 		end
 	end
 end

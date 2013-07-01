@@ -16,7 +16,6 @@ class OrangeTree
 			puts "A year has passed the tree is now #{@age} years old"
 		end
 		@fruit = 0 
-
 	end
 
 	def growtree
@@ -29,9 +28,8 @@ class OrangeTree
 				puts "The tree is now #{@height} ft tall"
 			end	
 		else
-			abort ("The orange tree has died")
-		end
-		
+			abort("The orange tree has died")
+		end	
 	end
 
 	def growfruit
@@ -39,12 +37,25 @@ class OrangeTree
 			@fruit = (@age*(@height*0.3)*(rand(3)+1)).to_i
 			puts "There are #{@fruit} oranges on the tree"
 		else
-			abort ("The orange tree has died")
+			abort("The orange tree has died")
 		end
-
 	end
 
-	def pickfruit
+	def pickfruit(num)
+		if @alive == true
+			if num <= @fruit 
+				@fruit -= num
+				puts "You picked #{num} oranges. #{@fruit} oragnes are left to pick" 
+			elsif num > @fruit
+				puts "You've pick all #{@fruit} on the tree. No fruit left"
+				#@fruit = 0 
+			else 
+				puts "There is no fruit to pick"
+				#@fruit = 0 
+			end
+		else
+			abort("The orange tree has died")
+		end
 	end
 
 
@@ -55,16 +66,6 @@ orangetree = OrangeTree.new
 orangetree.agetree
 orangetree.growtree
 orangetree.growfruit
+orangetree.pickfruit(20)
 puts
-orangetree.agetree
-orangetree.growtree
-orangetree.growfruit
-puts
-orangetree.agetree
-orangetree.growtree
-orangetree.growfruit
-puts
-orangetree.agetree
-orangetree.growtree
-orangetree.growfruit
-puts
+
