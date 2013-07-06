@@ -1,6 +1,6 @@
-#Finance Graph is a program that ask for you salary/wage information
-# and names and amounts of expenses.
-#program then tells you shows you a pie chart of income to expenses
+#-Finance Graph is a program that ask for you salary/wage information
+#-and names and amounts of expenses.
+#-giprogram then tells you shows you a pie chart of income to expenses
 
 puts "#{51.to_i / 5}%"
 
